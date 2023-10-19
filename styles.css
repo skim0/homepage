@@ -44,3 +44,15 @@ body {
 .right-box p {
     margin: 10px 0;
 }
+
+/* Media query for screens narrower than 600px */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack boxes vertically */
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%; /* Full width for both boxes on small screens */
+    }
+}
